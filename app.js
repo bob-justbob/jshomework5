@@ -8,14 +8,15 @@ const exit = document.querySelector('.exit')
  
 
 logbutton.addEventListener("click", function(event){
-    event.preventDefault();
     const popup = document.querySelector('.popup')
     popup.style.display = "flex"
     
-    exit.onclick = function(){
+    exit.onclick = function(event){
+        event.preventDefault();
         popup.remove();
         return;
     }
+    event.preventDefault();
 });
 
 
