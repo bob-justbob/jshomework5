@@ -1,7 +1,17 @@
 const form = document.querySelector('.form')
 const ul = document.querySelector('ul')
 const input = document.querySelector('input[name="thing"]')
+const logbutton = document.querySelector('.logbutton')
+
+
  
+logbutton.addEventListener("click", function(event){
+    event.preventDefault();
+    const popup = document.querySelector('.popup')
+    popup.style.display = "flex"
+})
+
+
 
 form.addEventListener('submit', (event) =>{
     event.preventDefault();

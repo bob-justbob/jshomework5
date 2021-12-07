@@ -8,6 +8,7 @@
 section {
     width: 100%;
     text-align: center;
+    
 } 
 .box h1 {
     color: white;
@@ -19,6 +20,66 @@ section {
 margin: 10px;
 }
 body {
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    color: gray;
 }
+.container {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 {
+    color: indigo;
+    font: 20px;
+    margin-bottom: 40px;
+}
+
+.logbutton {
+    background: white;
+    padding: 10px 15px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 10px;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+    margin-top: 50px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.logbutton:hover {
+    background: blue;
+    color: yellow;
+}
+
+.popup {
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupContent {
+    height: 250px;
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+input {
+    margin: 20px auto;
+    display: block;
+    width: 100px;
+    padding: 8px;
+    border: 1px solid gray;
+}
+ 
