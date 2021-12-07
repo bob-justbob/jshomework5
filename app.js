@@ -13,7 +13,7 @@ logbutton.addEventListener("click", function(event){
     
     exit.onclick = function(event){
         event.preventDefault();
-        popup.remove();
+        popup.style.display= "none"
         return;
     }
     event.preventDefault();
